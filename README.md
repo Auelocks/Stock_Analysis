@@ -31,13 +31,13 @@ This analysis determined that the DAQO stock decreased in value by about 63% in 
 
 Running the analysis for all stocks in 2017, only one stock “TERP” decreased in value while all other stocks showed positive returns.  The DQ stock showed positive returns in 2017 and had the lowest Total Daily Volume of shares traded.  Using the “Run optimized Analysis for All Stocks” script, generates the following table:
 
-![VBA_Challenge_2017.png](/Stock_Analysis/Resources/VBA_Challenge_2017.png "All Stocks Analysis 2017")
+![VBA_Challenge_2017](/Resources/VBA_Challenge_2017.png "All Stocks Analysis 2017")
 
 Using the optimized script, the elapsed time for the script to run the analysis was only 0.15625 seconds which is significantly less than the original script.
 
 The analysis for all stocks in 2018 is represented in the following table where the majority of stocks had decreased returns, including the DQ stock:  
 
-![VBA_Challenge_2018.png](/Stock_Analysis/Resources/VBA_Challenge_2018.png "All Stocks Analysis 2018")
+![VBA_Challenge_2018](/Resources/VBA_Challenge_2018.PNG "All Stocks Analysis 2018")
 
 Using the optimized script, the elapsed time was only 0.140625 seconds which is again, significantly less than the original script.
 
@@ -46,4 +46,4 @@ The stocks ENPH and RUN were the only stocks to show positive returns for both 2
 ## Summary
 1.	Code was refactored for the “All Stocks Analysis” macro to optimize the run time.  The refactored script did improve computation time which is an advantage for larger datasets but the disadvantage of an optimized code is that it can sometimes be more difficult to read, understand and debug later.
 
-2.	Once the refactored code for “All Stocks Analysis” was applied, it was clear that the optimized code was running at roughly one third (1/3) the elapsed time of the original code.  Additionally, we were able to populate and format the table in one script.  However, the refactored script utilizes multiple variables as arrays and three concurrent “For” loops to achieve this time savings which makes it more difficult for a human to comprehend when reading the script for the first time.  The original code utilizes nested loops to populate the final table which takes longer but it is easier for a human to read and comprehend the script. 
+2.	Once the refactored code for “All Stocks Analysis” was applied, it was clear that the optimized code was running at roughly one third (1/3) the elapsed time of the original code.  Additionally, we were able to populate and format the table in one script.  However, the refactored script utilizes multiple variables as arrays and consecutive “For” loops to achieve this time savings which makes it more difficult for a human to comprehend when reading the script for the first time.  The original code utilizes nested loops to populate the final table which increases computation time but is easier for a human to read and comprehend the script. 
